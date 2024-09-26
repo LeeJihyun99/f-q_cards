@@ -1,0 +1,106 @@
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family: "PT Sans", sans-serif;
+}
+
+
+.title{
+    font-size:30px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color:transparent;
+    padding-left:10px;
+    padding-right:10px;
+    cursor:pointer;
+    border-radius:10px;
+    margin:10px;
+    padding:20px;
+    border:1px, solid;
+    position:relative;
+
+}
+
+
+.question, .answer{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.card button{
+    width:40px;
+    height:40px;
+    border-radius:10px;
+    cursor:pointer;
+    background-color:transparent;
+    border:none;
+    margin:10px;
+    text-align:center;
+
+}
+
+button:hover{
+    background-color:rgb(223, 223, 219);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.answer{
+    display:flex;
+    flex-direction: column;
+    display:none;
+}
+
+.active{
+    background-color:rgba(253, 254, 255, 0.968);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    border:none;
+}
+
+.active .answer{
+    display:block;
+}
+
+.faq-toggle .fa-chevron-down{
+    display:block;
+}
+
+.active .faq-toggle .fa-chevron-down{
+    display:none;
+}
+.faq-toggle .fa-xmark{
+    display: none;
+    
+}
+.active .faq-toggle .fa-xmark{
+    display:block;
+}
+
+.fa-face-smile{
+    font-size:50px;
+    color:rgb(234, 183, 234);
+    position:absolute;
+    top:40px;
+    left:10px;
+    opacity:40%;
+    transform:rotate(30deg);
+    
+}
+
+.two{
+    font-size:50px;
+    color:rgb(165, 217, 244);
+    top:40px;
+    left:50px;
+    opacity:40%;
+    transform:rotate(-30deg);
+}
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/3bd910157d.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <body>
+        <span class="title">My experience</span>
+        <div class="main-div">
+            <div class="active card card1">
+                <div class="question question1">
+                    <div>University team project of implementing board game with Java</div>
+                    <button class="faq-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="answer answer1">
+                    <p>In my 5th semester, I worked on a team project where we had to implement an existing board game called 'Robo Rally.' We used:</p>
+                    <ul>
+                        <li><strong>JavaFX and SceneBuilder</strong> for the UI/UX</li>
+                        <li><strong>Java</strong> for the game logic</li>
+                    </ul>
+                    
+                    <p>Since I was particularly interested in frontend development, I took on the responsibility of UI/UX design and its implementation. My primary focus was to ensure that the design was intuitive, so players could easily follow the game without confusion.</p>
+
+                    <span>1. Creating a Waiting Room</span>
+                    <ul>
+                        <li>One of my tasks was to create a waiting room where players would wait until all were ready.</li>
+                        <li>I remembered a game I used to play where I got bored and confused waiting for it to start because the signals were unclear or not noticeable, even after updates.</li>
+                        <li>To avoid this problem, I added a <strong>crown icon</strong> for the player who created the room so that everyone would know who the leader was.</li>
+                        <li>The room creator (leader) could choose a map and wait for everyone to be ready.</li>
+                        <li>I made it clear to all players when the leader was choosing the map, and I added a <strong>toggle button</strong> for each player to indicate whether they were ready or not.</li>
+                    </ul>
+
+                    <span>2. Handling Complex Player Actions</span>
+                    <ul>
+                        <li>During the game, each player takes turns selecting multiple cards that determine their robot's movements for the next round.</li>
+                        <li>Given the complexity of actions, I anticipated that players might get confused.</li>
+                        <li>To address this, I designed a <strong>small space on the side</strong> of the screen displaying the status of all players, including the cards they chose, represented with small images for clarity.</li>
+                    </ul>
+
+                    <span>3. Drag-and-Drop Functionality</span>
+                    <ul>
+                        <li>To enhance visual understanding, I added a <strong>drag-and-drop feature</strong> at the bottom of each player's screen.</li>
+                        <li>Instead of just showing the card names, I used images of the cards, allowing players to easily drag and drop the cards they wanted to use for the next round.</li>
+                    </ul>
+
+                    <span>4. Additional Card Selection</span>
+                    <ul>
+                        <li>In the middle of the game, players could choose additional cards.</li>
+                        <li>Instead of replacing the cards they had already chosen at the bottom of the screen, I created a <strong>popup box</strong> for selecting additional cards.</li>
+                        <li>This allowed players to view both the cards they had already chosen and the additional cards they needed to select without confusion.</li>
+                    </ul>
+
+                    <span>Focus on UI Clarity</span>
+                    <p>Throughout the project, I ensured that each function had its own <strong>clear and distinct space</strong> within the UI. This was essential for creating an interface that was easy to navigate and prevented confusion during gameplay.</p>
+                </div>
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-regular fa-face-smile two"></i>
+            </div>
+            <div class="active card card2">
+                <div class="question question2">
+                    <div>Working student at AdessoSE</div>
+                    <button class="faq-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="answer answer2">
+                    <p>I worked at Adesso SE for a year, where I participated in multiple projects, primarily using <strong>React.js</strong> and occasionally <strong>Vue.js</strong>. Some of these were large internal projects that were already ongoing, and my task was to implement new features.</p>
+
+                    <span><strong>Key Projects and Responsibilities</strong></span>
+
+                    <span>1. Login Page Implementation</span>
+                    <p>One of the first tasks I took on was implementing the login page using <strong>React.js</strong>. This was my first experience working with React, and it served as a great learning opportunity to understand how to build UI components efficiently.</p>
+
+                    <span>2. Filter Page</span>
+                    <p>Another major task was building a <strong>filter page</strong> where users could filter items based on specific features. The page would dynamically show the filtered results, depending on the user's input.</p>
+
+                    <span>3. Keycloak Integration Issue</span>
+                    <p>During one project, we encountered significant issues while integrating <strong>Keycloak</strong> with the backend. Keycloak is an open-source identity and access management solution that provides features like SSO (Single Sign-On) and identity brokering. It connects the frontend and backend by generating a token (JWT) that the backend validates to control user authentication and authorization.</p>
+
+                    <p>In our project, there was a misunderstanding between the backend and frontend teams regarding how Keycloak should be used. The frontend was initially attempting to handle more of the Keycloak process than necessary. After becoming the only frontend developer on this project, I had to communicate with the backend team and the product manager to clarify how Keycloak should work in this flow.</p>
+
+                    <p>After gathering the necessary information, I created a <strong>diagram</strong> to outline how the flow should function:</p>
+                    <ul>
+                        <li>Keycloak should be handled entirely on the <strong>backend</strong>.</li>
+                        <li>The backend would provide a token, and the frontend would simply use that token for authentication.</li>
+                    </ul>
+
+                    <p>I then adjusted the incorrectly implemented frontend logic, ensuring that it was aligned with the clarified process. This experience taught me the importance of clear communication and detailed documentation to avoid wasting time on implementation misunderstandings.</p>
+
+                    <span><strong>Lessons Learned</strong></span>
+                    <p>In smaller projects, where I only needed to implement frontend features such as filters or forms, the process went much smoother. These projects were more successful because:</p>
+                    <ul>
+                        <li>We had regular communication through <strong>daily meetings</strong>.</li>
+                        <li>If someone couldn not attend, we would leave questions or updates in our group chat, which we checked daily.</li>
+                    </ul>
+
+                    <p>In one such project, I worked with two other team members, and thanks to the clear communication, we were able to finish everything on time and successfully present it to the project head.</p>
+                </div>
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-regular fa-face-smile two"></i>
+            </div>
+            <!-- <div class="active card card3">
+                <div class="question question3">
+                    <div>Personal practices using HTML, CSS</div>
+                    <button class="faq-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="answer answer3">answer</div>
+            </div>
+            <div class="active card card4">
+                <div class="question question4">
+                    <div>Personal React project of implementing movie app</div>
+                    <button class="faq-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="answer answer4">answer</div>
+            </div> -->
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
